@@ -7,7 +7,14 @@ Hi, this is my personal website, edited by Ignatius Djaynurdin with theme from T
 https://ignatiusdjaynurd.in
 
 My path:
-1. 
+1. Get a domain.
+2. Get a design.
+3. Create new repository on GitHub.
+4. Connect GitHub repo to VS Code.
+5. Edit and modify the template and then commit and push.
+6. Set DNS for the domain to username.github.io.
+7. Set custom URL in github repo username.github.io to domain.
+8. Done.
 
 
 Helpful stuff to look for in this project:
