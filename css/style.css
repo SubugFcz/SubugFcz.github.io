@@ -140,7 +140,7 @@ figure {
         text-transform: uppercase;
         letter-spacing: 1px; }
         #colorlib-aside #colorlib-main-menu ul li a {
-          color: rgba(0, 0, 0, 0.7);
+          color: #e7e2e2;
           text-decoration: none;
           position: relative;
           padding: 10px 0;
@@ -169,7 +169,7 @@ figure {
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
           #colorlib-aside #colorlib-main-menu ul li a:hover {
             text-decoration: none;
-            color: black; }
+            color: #e7e2e2; }
             #colorlib-aside #colorlib-main-menu ul li a:hover:after {
               visibility: visible;
               -webkit-transform: scaleX(1);
@@ -408,6 +408,7 @@ body.offcanvas {
   margin-bottom: 4em;
   font-weight: 700;
   text-transform: uppercase;
+  color: #999999;
   letter-spacing: 5px;
   line-height: 1.8;
   position: relative; }
