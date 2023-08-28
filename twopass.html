@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+
+    <title>Two Pass Algorithm - Ignatius Djaynurdin</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="main-workdetails-page">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo" width="82">
+                    </a>
+
+                    <nav class="navbar">
+                        <ula class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="works.html">Works</a></li>
+                        </ula>
+                        <a href="./assets/files/resume.pdf" class="theme-btn">Get My Resume</a>
+                    </nav>
+
+                    <a href="./assets/files/resume.pdf" class="theme-btn">Get My Resume</a>
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <section class="breadcrumb-area">
+            <div class="container">
+                <div class="breadcrumb-content" data-aos="fade-up">
+                    <p>ASSEMBLY / C - 2023</p>
+                    <h1 class="section-heading">Two Pass Algorithm<br> for Connected Components Labeling</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="project-details-wrap">
+            <div class="project-details-imga" data-aos="zoom-in">
+
+            </div>
+
+            <div class="container">
+                <div data-aos="zoom-in">
+                    <div class="d-flex project-infos-wrap shadow-box mb-24">
+                        <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                        <div class="project-details-info flex-1">
+                            <h3>About</h3>
+                            <p>This project contains the implementation of Connected Component Labeling using the
+                                Two-Pass Algorithm in both C and MIPS Assembly. The algorithm is used to label different
+                                connected components in binary images, where each pixel is represented by hex values
+                                stored in .txt files.</p>
+                            <p>In the C implementation, the labels are represented as integers, and the goal is to group
+                                connected pixels into the same label. In the MIPS Assembly implementation, a picture
+                                will be shown with different colors representing different components.
+
+                            </p>
+                            <h3>Two Pass Algorithm</h3>
+                            <pl>
+                                <ol>
+                                    <li>First Pass:</li>
+                                    <ul
+                                        style="color: #FFFFFF; font-size: 16px; opacity:0.8; margin-bottom: 10px; line-height: 1.56;">
+                                        <li>Traverse through the binary image, pixel by pixel, from the top-left corner
+                                            to the bottom-right corner.</li>
+                                        <li>If the current pixel is part of a connected component (i.e., has a value of
+                                            1), assign a unique label to it. The label represents the connected
+                                            component to which the pixel belongs.</li>
+                                        <li>Update the label equivalences to keep track of connected components that
+                                            share the same label.</li>
+                                    </ul>
+                                    <li>Second Pass:</li>
+                                    <ul
+                                        style="color: #FFFFFF; font-size: 16px; opacity:0.8; margin-bottom: 10px; line-height: 1.56;">
+                                        <li>Traverse through the binary image again, pixel by pixel.</li>
+                                        <li>For each labeled pixel (value > 0), update its label based on the label
+                                            equivalences determined in the first pass. This step ensures that all
+                                            connected pixels in the same component have the same label.</li>
+                                    </ul>
+                                </ol>
+                            </pl>
+                            <a href="https://github.com/SubugFcz/Two-Pass" target="_blank" rel="noopener noreferrer"
+                                style="color:#5B78F6">Check the Repo!</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="project-details-4-img mb-24" data-aos="zoom-in">
+                    <h3 style="text-align: center;">IN ASSEMBLY</h3>
+                    <div class="slideshow-container">
+                        <div class="slide2">
+                            <img src="./assets/images/twopass/tile5.png">
+                        </div>
+
+                        <div class="slide2">
+                            <img src="./assets/images/twopass/tile116.png">
+                        </div>
+
+                        <div class="slide2">
+                            <img src="./assets/images/twopass/tile121.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-24">
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <h3 style="text-align: center;">FIRST PASS</h3>
+                        <div class="project-details-5-img">
+                            <div class="slideshow-container">
+                                <div class="slide3">
+                                    <img src="./assets/images/twopass/ctile5a.png">
+                                </div>
+
+                                <div class="slide3">
+                                    <img src="./assets/images/twopass/ctile116a.png">
+                                </div>
+
+                                <div class="slide3">
+                                    <img src="./assets/images/twopass/ctile121a.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <h3 style="text-align: center;">SECOND PASS</h3>
+                        <div class="project-details-5-img">
+                            <div class="slideshow-container">
+                                <div class="slide">
+                                    <img src="./assets/images/twopass/ctile5b.png">
+                                </div>
+
+                                <div class="slide">
+                                    <img src="./assets/images/twopass/ctile116b.png">
+                                </div>
+
+                                <div class="slide">
+                                    <img src="./assets/images/twopass/ctile121b.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in">
+                    <div class="project-about-2 d-flex shadow-box mb-24">
+                        <img src="./assets/images/bg1.png" alt="BG" class="bg-img">
+                        <div class="right-details">
+                            <h3>Description</h3>
+                            <p>In the examples above, the picture at the left represents the result from the
+                                first pass of the algorithm, while the picture on the right displays the outcome after
+                                the second pass. In the MIPS Assembly implementation, the image is colorized directly
+                                within the assembly code after the completion of the two-pass algorithm. </p>
+
+                            <p>The MIPS Assembly implementation is not merely colorizing the output generated by the C
+                                implementation; instead, it independently executes the entire Connected Component
+                                Labeling process, including the two-pass algorithm and the subsequent colorization of
+                                the connected components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a href="./index.html" class="logo">
+                        <img src="./assets/images/logo.png" alt="Logo" width="182">
+                    </a>
+                    <ula class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="works.html">Works</a></li>
+                    </ula>
+                    <p class="copyright">
+                        &copy; All rights reserved by <span>Ignatius</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./assets/js/slideshow.js"></script>
+    <script src="./assets/js/slideshow2.js"></script>
+    <script src="./assets/js/slideshow3.js"></script>
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
